@@ -1,8 +1,8 @@
 
 var getHTML = require('../http-functions');
 
-function  () {
-
+function printLowercase (html) {
+  console.log(html.toLowerCase());
 }
 
 var requestOptions = {
@@ -10,4 +10,4 @@ var requestOptions = {
   path: '/http-examples/step6/lowercase.html'
 };
 
-console.log(getHTML(requestOptions, printHTML));
+console.log(getHTML(requestOptions, printLowercase));
